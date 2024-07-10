@@ -1,0 +1,40 @@
+<script>
+    import NavigationBar from "$lib/components/NavigationBar.svelte";
+</script>
+
+<div class="header">
+ <div class="text">
+  GlamVault
+ </div>
+
+ <NavigationBar />
+</div>
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+    .header {
+     width: 100%;
+     height: 60px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 30px;
+     background: black;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     z-index: 2;
+    }
+
+    .text {
+     font-family: "Julius Sans One", sans-serif;
+     color: white;
+     font-weight: 400;
+     font-size: 32px;
+     margin-left: 20px;
+     font-style: normal;
+     padding: 10px;
+    }
+</style>
