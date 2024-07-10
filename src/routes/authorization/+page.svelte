@@ -1,7 +1,20 @@
 <script>
-    import Header from "$lib/components/Footer.svelte";
+    import Authorization from "$lib/components/Authorization.svelte";
 </script>
 
-<Header/>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="authorization-block">
+    <!--Image-->
+    <Authorization />
+</div>
+
+<style>
+    .authorization-block {
+        min-height: 36em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+
+
