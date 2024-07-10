@@ -51,20 +51,26 @@
 
 </style>
 
+<script lang="ts">
+  function navigateToURL(link: string){
+    window.location.href = link;
+  }
+</script>
+
 <div class="button-container">
-    <button class="button">
+    <button class="button" on:click={() => navigateToURL('/')}>
         <img src="/assets/homePage/home.png" alt="Home">
     </button>
 
-    <button class="button">
+    <button class="button" on:click={() => navigateToURL('/authorization')}>
         <img src="/assets/homePage/perm_identity.png" alt="Account">
     </button>
 
-    <button class="button">
+    <button class="button" on:click={() => navigateToURL('/shoppingCart')}>
         <img src="/assets/homePage/shopping_cart.png" alt="Shopping cart">
     </button>
 
-    <button class="button">
+    <button class="button" on:click={() => navigateToURL('/about')}>
         <img src="/assets/homePage/article.png" alt="About">
     </button>
 </div>
