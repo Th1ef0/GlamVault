@@ -70,7 +70,7 @@
         <img src="/assets/homePage/shopping_cart.png" alt="Shopping cart">
     </button>
 
-    <button class="button" on:click={() => navigateToURL('/about')}>
+    <button class="button" on:click={() => navigateToURL('/shoppingList')}>
         <img src="/assets/homePage/article.png" alt="About">
     </button>
 </div>

@@ -1,5 +1,9 @@
-<script>
+<script lang="ts">
     import LinkBar from "$lib/components/LinkBar.svelte";
+
+    function navigateToURL(link: string){
+        window.location.href = link;
+    }
 </script>
 
 <div class="footer">
@@ -8,7 +12,7 @@
             GlamVault
         </div>
 
-        <button class="button">
+        <button on:click={() => navigateToURL('/about')} class="button">
             ABOUT US
         </button>
     </div>
