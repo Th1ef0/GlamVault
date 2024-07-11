@@ -12,9 +12,9 @@
     .header {
         display: flex;
         justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        padding: 10px;
+        align-items: end;
+        font-size: 22px;
+        padding: 15px;
         font-family: "Julius Sans One", sans-serif;
     }
 
@@ -33,19 +33,11 @@
         justify-content: center;
     }
 
-    .remember-block {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Julius Sans One", sans-serif;
-        font-size: 10px;
-    }
-
     .submit-button-block {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100px;
+        height: 40px;
     }
 
     .submit-button {
@@ -61,7 +53,7 @@
     .create-account {
         display: flex;
         align-items: end;
-        height: 1px;
+        height: 20px;
         justify-content: center;
         font-family: "Krub", sans-serif;
     }
@@ -77,45 +69,44 @@
 
 <div class="authorization-block">
     <div class="header">
-        AUTHORIZATION
+        REGISTRATION
     </div>
 
     <hr style="margin: 0">
 
-    <div class="header" style="padding: 25px; font-size: 24px">
-        WELCOME BACK
+    <div class="header" style="padding: 10px; font-size: 24px; margin-top: 10px">
+        TELL ABOUT YOU
     </div>
 
     <div class="input-block">
-        <input placeholder="login" class="input-login" type="text">
+        <input placeholder="name" class="input-login" type="text">
+    </div>
+
+    <div class="input-block">
+        <input placeholder="surname" class="input-login" type="password">
+    </div>
+
+    <div class="input-block">
+        <input placeholder="login" class="input-login" type="password">
     </div>
 
     <div class="input-block">
         <input placeholder="password" class="input-login" type="password">
     </div>
 
-    <div style="display: flex; margin-left: 45px; gap: 10px" >
-        <label>
-            <input type="checkbox" class="input-box" style="accent-color: black">
-        </label>
-        <div class="remember-block">
-            Remember me
-        </div>
-    </div>
-
     <div class="submit-button-block">
         <button class="submit-button">
-            Sign in
+            Sign up
         </button>
     </div>
 
     <div class="create-account">
         <div style="color: #A6A6A6; font-size: 10px">
-            Don't have an account?
+            Already have an account?
         </div>
 
-        <button on:click={() => navigateToURL('/registration')} style="background: black; border: none; color: white; font-size: 10px">
-            Sign up
+        <button on:click={() => navigateToURL('/authorization')} style="background: black; border: none; color: white; font-size: 10px">
+            Sign in
         </button>
 
     </div>
