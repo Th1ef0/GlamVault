@@ -9,7 +9,7 @@
 <div class="product-whole">
     <img class="primary-image" src={mainImage} alt="Product 1" />
     <div class="product-info block-inline">
-        <h2 class="product-title">Black Shirt</h2>
+        <h2 class="product-title">Long Sleeve Shirt</h2>
         <div class="divider" />
         <p class="product-details block-inline gray">Price:</p>
         <p class="product-price block-inline">$19.99</p>
@@ -156,6 +156,9 @@
         border: 0;
         outline: none;
         margin-bottom: 0;
+        border: solid .1rem black;
+        border-radius: .75rem;
+        box-sizing: border-box;
     }
     .divider {
         margin-top: 2%;

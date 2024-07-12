@@ -22,33 +22,33 @@
     h1 {
         font-family: "Julius Sans One", sans-serif;
         font-weight: 400;
-        font-size: 40px;
+        font-size: 2.5rem;
         text-align: center;
         color: white;
-        padding: 30px;
+        padding: 1.75rem;
         background: black;
-        border-radius: 25px;
-        margin: 100px 650px 50px;
+        border-radius: 1.75rem;
+        margin: 4% 40% 2%;
     }
 
     section {
         text-align: center;
-        padding: 50px;
-        border: 4px solid black;
-        border-radius: 25px;
-        margin: 0 300px;
+        padding: 2%;
+        border: .25rem solid black;
+        border-radius: 1.5rem;
+        margin: 0 15%;
 
     }
 
     p {
         font-family: "Krub", sans-serif;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 500;
     }
     span {
         font-family: "Krub", sans-serif;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 500;
     }
