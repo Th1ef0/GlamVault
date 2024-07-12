@@ -13,5 +13,6 @@ import Footer from "$lib/components/Footer.svelte";
 <Header />
 <main>
     <slot />
+    <div style="min-height: 5rem;" />
 </main>
 <Footer />
