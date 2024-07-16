@@ -17,9 +17,6 @@
         width: 221px;
         height: 38px;
         cursor: pointer;
-
-        outline: 3px #181717 solid;
-        outline-offset: -3px;
         transition: 400ms;
     }
 
