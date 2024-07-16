@@ -1,5 +1,7 @@
 <button>
-    Add to cart
+    <div class="text">
+        Add to cart
+    </div>
 </button>
 
 <style>
@@ -14,5 +16,20 @@
         background: white;
         width: 221px;
         height: 38px;
+        cursor: pointer;
+
+        outline: 3px #181717 solid;
+        outline-offset: -3px;
+        transition: 400ms;
     }
+
+    button:hover {
+        background-color: black;
+    }
+
+    button:hover .text {
+        color: white;
+        transition: 400ms;
+    }
+
 </style>

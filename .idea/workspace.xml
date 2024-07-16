@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e3af0ed-342f-47df-a9ad-774504f6687c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/shoppingList/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shoppingList/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/AddToCartButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/AddToCartButton.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <workItem from="1720700186168" duration="5990000" />
       <workItem from="1720721709643" duration="2620000" />
       <workItem from="1720770698888" duration="2175000" />
-      <workItem from="1721118724103" duration="5118000" />
+      <workItem from="1721118724103" duration="5857000" />
     </task>
     <servers />
   </component>
