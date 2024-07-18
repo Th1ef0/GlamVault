@@ -17,7 +17,6 @@
         </button>
     </div>
 
-
     <LinkBar />
 </div>
 

@@ -32,7 +32,7 @@
     }
 
     img {
-        max-width: 80vh;
+        max-width: 85vh;
         height: auto;
     }
 
@@ -45,7 +45,7 @@
         padding: 100px 100px;
         border: 4px solid black;
         border-radius: 25px;
-        margin: 0 75px;
+        margin: 80px 75px 0;
     }
 
     h1 {

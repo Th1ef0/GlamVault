@@ -3,7 +3,7 @@
 </script>
 
 <section>
-    <div id="main">
+    <div class="main">
         <div class="photo-block">
             <img src="/assets/authorization/hands.png" alt="Hands" >
         </div>
@@ -15,9 +15,8 @@
 </section>
 
 <style>
-    #main {
+    .main {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -29,8 +28,8 @@
     }
 
     img {
-        max-width: 65%;
-        height: auto;
+        margin-left: 100px;
+        height: 50em;
     }
 
     .authorization-block {
@@ -42,7 +41,7 @@
     }
 
     @media(min-width: 768px) {
-        #main {
+        .main {
             flex-direction: row;
         }
 
