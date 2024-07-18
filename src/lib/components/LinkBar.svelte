@@ -28,8 +28,8 @@
     .button {
         outline: 0 !important;
         border: 0 !important;
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         background-color: transparent;
         display: flex;
