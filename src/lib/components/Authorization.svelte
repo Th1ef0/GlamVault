@@ -1,8 +1,8 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+128+Text&display=swap');
     .authorization-block {
-        height: 21em;
-        width: 19em;
+        height: 23em;
+        width: 21em;
         color: white;
         background: black;
         border: none;
@@ -23,6 +23,7 @@
         border-radius: 20px;
         padding: 5px;
         width: 15em;
+        text-indent: 5px;
         margin: 4px;
         font-family: "Krub", sans-serif;
     }
@@ -52,6 +53,7 @@
         height: 30px;
         width: 70px;
         background: white;
+        color: black;
         border: none;
         border-radius: 15px;
         font-family: Krub, sans-serif;
@@ -68,6 +70,7 @@
         height: 1px;
         justify-content: center;
         font-family: "Krub", sans-serif;
+        gap: 5px
     }
 
 </style>

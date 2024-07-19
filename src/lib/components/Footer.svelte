@@ -17,7 +17,6 @@
         </button>
     </div>
 
-
     <LinkBar />
 </div>
 
@@ -49,10 +48,13 @@
         font-family: "Krub", sans-serif;
         color: white;
         font-weight: 200;
-        font-size: 32px;
+        font-size: 30px;
+        max-height: 50px;
+        margin-top: 10px;
         margin-left: 20px;
+        border-radius: 15px;
         font-style: normal;
-        padding: 10px;
+        padding: 5px;
         background: black;
         border: none;
         transition: all ease-in-out 0.3s;
@@ -60,7 +62,8 @@
     }
 
     .button:hover {
-        transform: translateY(-3px);
+        background: white;
+        color: black;
     }
 
     .text-code {
