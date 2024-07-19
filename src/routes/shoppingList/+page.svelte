@@ -13,6 +13,7 @@
         description: string;
         price: number;
         quantity: number;
+        img: string;
     }
 
     let products: Product[] = [];
@@ -34,7 +35,7 @@
         <div class="cloth-card">
             <div class="block-media">
                 <a href="/product/{product.id}">asd</a>
-<!--                     <img src={`https://avatars.githubusercontent.com/u/159456216?v=`} alt={product.name} />-->
+                <img src={product.img} alt={product.name} />
             </div>
 
             <div class="text-block">

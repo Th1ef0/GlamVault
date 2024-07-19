@@ -5,14 +5,28 @@
     let name = "";
     let description = "";
     let price = 0.0;
-    // let image = new Blob();
 
-    async function addProduct() {
+    function getBase64(): Promise<string> {
+        return new Promise((resolve, reject) => {
+           const reader = new FileReader();
+           const input = document.querySelector("#upload") as HTMLInputElement;
+           const files = input.files as FileList;
+           const file = files[0];
+           reader.readAsDataURL(file);
+           reader.onload = function () {
+             resolve(reader.result as string);
+           };
+           reader.onerror = function (error) {
+             reject(error);
+           };
+        });
+    }
+
+    async function addProduct(img: string) {
         const formData = new FormData();
         formData.append("name", name);
         formData.append("description", description);
         formData.append("price", price.toString());
-        // formData.append('image', image);
 
         await axios.post(
             "http://127.0.0.1:8000/products/new/",
@@ -20,7 +34,7 @@
                 name: name,
                 description: description,
                 price: price,
-                // image: image,
+                img: img,
             },
             {
                 headers: {
@@ -36,32 +50,24 @@
                 console.log(error);
             })
     }
-
-    // function handleImageUpload(event: Event) {
-    //     const target = event.target as HTMLInputElement;
-    //     if (target.files) {
-    //         let image_data = target.files[0];
-    //         image = new Blob([image_data], {
-    //             type: "image/png",
-    //         });
-    //     }
-    // }
 </script>
 
 <div class="full">
     <p class="title-main">Create a New Product</p>
     <div class="divider"/>
-    <form on:submit|preventDefault={addProduct} method="get">
-        <div>
-            <label>
-                Image:
-                <input
-                        type="file"
-                        accept="image/*"
-                        class="form-element"
-                />
+    <form on:submit|preventDefault={() => {getBase64().then(img => {addProduct(img)})}} method="get">
+        <div class="rounded-md border border-indigo-500 bg-gray-50 p-4 shadow-md w-36">
+            <label for="upload" class="flex flex-col items-center gap-2 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-white stroke-indigo-500"
+                     viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                <span class="text-gray-600 font-medium">Upload file</span>
             </label>
+            <input id="upload" accept="image/*" type="file" class="hidden"/>
         </div>
+
         <div class="form-main">
             <label>
                 Name:

@@ -1,9 +1,9 @@
-from sqlalchemy import create_engine, Column, String, Integer, CHAR, Float, LargeBinary
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy_utils import database_exists, create_database
-from sql_settings import postgresql as settings
+from sqlalchemy_utils import create_database, database_exists
+
 from models import Base
+from sql_settings import postgresql as settings
 
 
 def get_engine(user, passwd, host, port, db):
@@ -13,12 +13,15 @@ def get_engine(user, passwd, host, port, db):
     engine = create_engine(url, pool_size=50, echo=True)
     return engine
 
-engine = get_engine(settings['pguser'],
-                    settings['pgpasswd'],
-                    settings['pghost'],
-                    settings['pgport'],
-                    settings['pgdb'])
-        
+
+engine = get_engine(
+    settings["pguser"],
+    settings["pgpasswd"],
+    settings["pghost"],
+    settings["pgport"],
+    settings["pgdb"],
+)
+
 Base.metadata.create_all(bind=engine)
 
 Session = sessionmaker(bind=engine)

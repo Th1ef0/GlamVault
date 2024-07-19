@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e3af0ed-342f-47df-a9ad-774504f6687c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="9e3af0ed-342f-47df-a9ad-774504f6687c" name="Changes" comment="add market functional">
+      <change afterPath="$PROJECT_DIR$/backend.Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend.Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/NavigationBar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/NavigationBar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/receiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/receiver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/sql_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/sql_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/admin/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/admin/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/product/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/product/[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/registration/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/registration/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/shoppingList/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shoppingList/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +51,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -49,25 +63,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "C:/Users/nosov/WebstormProjects/GlamVault",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\kve10\\WebstormProjects\\GlamVault\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nosov/WebstormProjects/GlamVault&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kve10\\WebstormProjects\\GlamVault\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nosov\WebstormProjects\GlamVault\src\routes\authorization" />
@@ -100,11 +114,26 @@
       <workItem from="1720721709643" duration="2620000" />
       <workItem from="1720770698888" duration="2175000" />
       <workItem from="1721118724103" duration="10636000" />
-      <workItem from="1721391219439" duration="14689000" />
+      <workItem from="1721391219439" duration="16240000" />
+      <workItem from="1721418884606" duration="3783000" />
+      <workItem from="1721422836116" duration="3513000" />
     </task>
+    <task id="LOCAL-00001" summary="add market functional">
+      <option name="closed" value="true" />
+      <created>1721416951728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721416951728</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add market functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="add market functional" />
   </component>
 </project>

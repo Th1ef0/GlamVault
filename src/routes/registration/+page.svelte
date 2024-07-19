@@ -4,10 +4,6 @@
 
 <section>
     <div class="main">
-        <div class="photo-block">
-            <img src="/assets/registration/img.png" alt="Background">
-        </div>
-
         <div class="registration-block">
             <Registration />
         </div>

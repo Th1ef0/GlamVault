@@ -8,6 +8,7 @@
         description: string;
         price: number;
         quantity: number;
+        img: string;
     }
 
     let product: Product | null = null;
@@ -33,7 +34,7 @@
 
 {#if product}
     <div class="product-whole">
-        <img class="primary-image" src="" alt="Product 1"/>
+        <img class="primary-image" src={product.img} alt="Product 1"/>
         <div class="product-info block-inline">
             <h2 class="product-title">{product.name}</h2>
             <div class="divider"/>
