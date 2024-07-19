@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e3af0ed-342f-47df-a9ad-774504f6687c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/NavigationBar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/NavigationBar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/admin/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/admin/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/product/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/product/[id]/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/shoppingList/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shoppingList/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +30,7 @@
         <option value="Authorization" />
         <option value="Registration" />
         <option value="AddToCartButton" />
-        <option value="AccountInput" />
+        <option value="+page" />
       </list>
     </option>
   </component>
@@ -41,36 +49,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nosov/WebstormProjects/offer&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\nosov\\WebstormProjects\\GlamVault\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "C:/Users/nosov/WebstormProjects/GlamVault",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\kve10\\WebstormProjects\\GlamVault\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nosov\WebstormProjects\GlamVault\src\routes\authorization" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kve10\WebstormProjects\GlamVault" />
+      <recent name="C:\Users\kve10\WebstormProjects\GlamVault\api" />
       <recent name="C:\Users\nosov\WebstormProjects\GlamVault\src\routes" />
       <recent name="C:\Users\nosov\WebstormProjects\GlamVault\static\assets\authorization" />
       <recent name="C:\Users\nosov\WebstormProjects\GlamVault\static\assets" />
-      <recent name="C:\Users\nosov\WebstormProjects\GlamVault\static\assets\footer" />
-      <recent name="C:\Users\nosov\WebstormProjects\GlamVault\static\assets\home" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,10 +99,8 @@
       <workItem from="1720700186168" duration="5990000" />
       <workItem from="1720721709643" duration="2620000" />
       <workItem from="1720770698888" duration="2175000" />
-      <workItem from="1721118724103" duration="10952000" />
-      <workItem from="1721143445060" duration="243000" />
-      <workItem from="1721144870464" duration="640000" />
-      <workItem from="1721221294447" duration="1122000" />
+      <workItem from="1721118724103" duration="10636000" />
+      <workItem from="1721391219439" duration="14689000" />
     </task>
     <servers />
   </component>

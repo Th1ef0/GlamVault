@@ -15,7 +15,6 @@ class ProductDB(Base):
 
     def __init__(self, name: str, description: str, price: float):
         # self.id = id
-
         self.name = name
         self.description = description
         self.price = price
@@ -27,4 +26,5 @@ class ProductDB(Base):
 class ProductAPI(BaseModel):
     name: str
     description: str
-    price: float 
+    price: float
+    # img: bytes

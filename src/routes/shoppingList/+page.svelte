@@ -1,110 +1,71 @@
-<script>
+<script lang="ts">
     import AddToCartButton from "$lib/components/AddToCartButton.svelte";
+
+    import {onMount} from 'svelte';
+    import axios from 'axios';
+
+    import {Link} from 'svelte-routing';
+
+
+    interface Product {
+        id: number;
+        name: string;
+        description: string;
+        price: number;
+        quantity: number;
+    }
+
+    let products: Product[] = [];
+
+    let baseUrl = 'http://127.0.0.1:8000';
+
+    onMount(async () => {
+        try {
+            const response = await axios.get(`${baseUrl}/products/`);
+            products = response.data;
+        } catch (error) {
+            console.error('Error fetching products:', error);
+        }
+    });
 </script>
 
 <div class="cards">
-    <div class="cloth-card">
-        <div class="block-media"></div>
+    {#each products as product}
+        <div class="cloth-card">
+            <div class="block-media">
+                <a href="/product/{product.id}">asd</a>
+<!--                     <img src={`https://avatars.githubusercontent.com/u/159456216?v=`} alt={product.name} />-->
+            </div>
 
-        <div class="text-block">
-            <span>T-Shirt</span>
-            <span style="color: #737373">205$</span>
+            <div class="text-block">
+                <span>{product.name}</span>
+                <span style="color: #737373">{product.price}$</span>
+            </div>
+
+            <AddToCartButton/>
         </div>
-
-        <AddToCartButton />
-    </div>
-
-    <div class="cloth-card">
-        <div class="block-media"></div>
-
-        <div class="text-block">
-            <span>T-Shirt</span>
-            <span style="color: #737373">205$</span>
-        </div>
-
-        <AddToCartButton />
-    </div>
-
-    <div class="cloth-card">
-        <div class="block-media"></div>
-
-        <div class="text-block">
-            <span>T-Shirt</span>
-            <span style="color: #737373">205$</span>
-        </div>
-
-        <AddToCartButton />
-    </div>
-
-    <div class="cloth-card">
-        <div class="block-media"></div>
-
-        <div class="text-block">
-            <span>T-Shirt</span>
-            <span style="color: #737373">205$</span>
-        </div>
-
-        <AddToCartButton />
-    </div>
-
-    <div class="cloth-card">
-        <div class="block-media"></div>
-
-        <div class="text-block">
-            <span>T-Shirt</span>
-            <span style="color: #737373">205$</span>
-        </div>
-
-        <AddToCartButton />
-    </div>
-
-    <div class="cloth-card">
-        <div class="block-media"></div>
-
-        <div class="text-block">
-            <span>T-Shirt</span>
-            <span style="color: #737373">205$</span>
-        </div>
-
-        <AddToCartButton />
-    </div>
-
-    <div class="cloth-card">
-        <div class="block-media"></div>
-
-        <div class="text-block">
-            <span>T-Shirt</span>
-            <span style="color: #737373">205$</span>
-        </div>
-
-        <AddToCartButton />
-    </div>
-
-    <div class="cloth-card">
-        <div class="block-media"></div>
-
-        <div class="text-block">
-            <span>T-Shirt</span>
-            <span style="color: #737373">205$</span>
-        </div>
-
-        <AddToCartButton />
-    </div>
+    {/each}
 </div>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+128+Text&display=swap');
 
     @media (min-width: 600px) {
-        .cards { grid-template-columns: repeat(2, 1fr); }
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     @media (min-width: 900px) {
-        .cards { grid-template-columns: repeat(3, 1fr); }
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     @media (min-width: 1200px) {
-        .cards { grid-template-columns: repeat(4, 1fr); }
+        .cards {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     .cards {

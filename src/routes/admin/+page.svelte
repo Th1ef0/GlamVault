@@ -1,7 +1,6 @@
 <script lang="ts">
     import axios from "axios";
-    import { onMount } from "svelte";
-    import { navigate } from "svelte-routing";
+    import {navigate} from "svelte-routing";
 
     let name = "";
     let description = "";
@@ -15,12 +14,13 @@
         formData.append("price", price.toString());
         // formData.append('image', image);
 
-        const res = await axios.post(
+        await axios.post(
             "http://127.0.0.1:8000/products/new/",
             {
                 name: name,
                 description: description,
                 price: price,
+                // image: image,
             },
             {
                 headers: {
@@ -28,13 +28,13 @@
                 }
             }
         )
-        .then(function (response) {
-            console.log(response);
-            navigate('/shoppingList')
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
+            .then(function (response) {
+                console.log(response);
+                navigate('/')
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
     }
 
     // function handleImageUpload(event: Event) {
@@ -50,35 +50,35 @@
 
 <div class="full">
     <p class="title-main">Create a New Product</p>
-    <div class="divider" />
-    <p class="title-secondary">Information about a Product:</p>
+    <div class="divider"/>
     <form on:submit|preventDefault={addProduct} method="get">
+        <div>
+            <label>
+                Image:
+                <input
+                        type="file"
+                        accept="image/*"
+                        class="form-element"
+                />
+            </label>
+        </div>
         <div class="form-main">
             <label>
                 Name:
-                <input type="text" class="form-element" bind:value={name} />
+                <input type="text" class="form-element" bind:value={name}/>
             </label>
             <label>
                 Price:
-                <input type="number" step="0.01" class="form-element" bind:value={price} />
+                <input type="number" step="0.01" class="form-element" bind:value={price}/>
             </label>
             <label>
                 Description:
                 <input
-                    type="text"
-                    class="form-element"
-                    bind:value={description}
+                        type="text"
+                        class="form-element"
+                        bind:value={description}
                 />
             </label>
-            <!-- <label>
-                Image:
-                <input
-                    type="file"
-                    accept="image/*"
-                    on:change={handleImageUpload}
-                    class="form-element"
-                />
-            </label> -->
             <button type="submit" class="form-button">Add product</button>
         </div>
     </form>
@@ -91,16 +91,19 @@
         width: 10rem;
         height: 1.75rem;
     }
+
     .form-main {
         display: flex;
         flex-direction: column;
     }
+
     .form-element {
         margin-top: 1%;
         width: 20rem;
         height: 1.5rem;
         font-size: 1.25rem;
     }
+
     .title-secondary {
         margin-bottom: 0%;
         margin-top: 3%;
@@ -109,12 +112,14 @@
         font-style: normal;
         font-weight: 600;
     }
+
     .divider {
         margin-top: 2%;
         min-height: 0.1rem;
         background-color: gray;
         width: 40rem;
     }
+
     .title-main {
         font-family: "Julius Sans One", sans-serif;
         font-weight: 700;
@@ -124,6 +129,7 @@
         margin-bottom: 0;
         margin-left: 1rem;
     }
+
     .full {
         margin-left: 15%;
     }

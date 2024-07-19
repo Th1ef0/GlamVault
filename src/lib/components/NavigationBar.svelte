@@ -66,16 +66,12 @@
         <img src="/assets/homePage/perm_identity.png" alt="Account">
     </button>
 
-    <button class="button" on:click={() => navigateToURL('/shoppingCart')}>
-        <img src="/assets/homePage/shopping_cart.png" alt="Shopping cart">
-    </button>
+<!--    <button class="button" on:click={() => navigateToURL('/shoppingCart')}>-->
+<!--        <img src="/assets/homePage/shopping_cart.png" alt="Shopping cart">-->
+<!--    </button>-->
 
     <button class="button" on:click={() => navigateToURL('/shoppingList')}>
         <img src="/assets/homePage/article.png" alt="About">
-    </button>
-
-    <button class="button" on:click={() => navigateToURL('/product/this-should-be-an-id')}>
-        <img src="/assets/homePage/tie.png" alt="Product">
     </button>
 
     <button class="button" on:click={() => navigateToURL('/admin')}>
