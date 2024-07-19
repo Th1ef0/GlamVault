@@ -110,8 +110,8 @@
         font-weight: 500;
         font-size: 1.5rem;
         text-align: center;
-        color: white;
-        background-color: black;
+        color: black;
+        background-color: white;
         padding: 1.75rem;
         border: solid .25rem black;
         border-radius: 1.5rem;
@@ -119,8 +119,8 @@
     }
     .cart-text:hover {
         cursor: pointer;
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
         transition: all .3s;
     }
     .cart-button {

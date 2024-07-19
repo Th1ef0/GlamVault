@@ -58,6 +58,10 @@
         font-size: 13px;
     }
 
+    .submit-button:hover {
+        cursor: pointer;
+    }
+
     .create-account {
         display: flex;
         align-items: end;
