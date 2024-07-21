@@ -1,21 +1,3 @@
-<div class="button-container">
-	<button class="button">
-		<img src="/assets/footer/call.png" alt="Call" />
-	</button>
-
-	<button class="button">
-		<img src="/assets/footer/github.png" alt="GitHub" />
-	</button>
-
-	<button class="button">
-		<img src="/assets/footer/instagram.png" alt="Instagram" />
-	</button>
-
-	<button class="button">
-		<img src="/assets/footer/telegram.png" alt="Telegram" />
-	</button>
-</div>
-
 <style>
 	button {
 		background-color: white;

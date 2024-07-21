@@ -12,10 +12,10 @@ services:
     depends_on:
       - postgres
     environment:
-      PG_USER: postgres
-      PG_PASSWD: 'sup3r_s3cr3t_pa55w0rd'
-      PG_HOST: postgres
-      PG_PORT: 5432
+      PG_USER: postgres.agkxhhrlhamiyvutsgnb
+      PG_PASSWD: '15tuse0WS50L2j4B'
+      PG_HOST: aws-0-eu-central-1.pooler.supabase.com
+      PG_PORT: 6543
       PG_DB: postgres
   frontend:
     build:

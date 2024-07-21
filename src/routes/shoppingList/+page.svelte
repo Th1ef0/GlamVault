@@ -35,7 +35,7 @@
 <div class="cards">
 	{#each products as product}
 		<div class="cloth-card">
-			<div class="block-media">
+			<div class="block-media overflow-hidden">
 				<a href="/product/{product.id}"> <img src={product.img} alt={product.name} /></a>
 			</div>
 
