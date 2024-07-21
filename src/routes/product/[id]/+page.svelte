@@ -49,22 +49,30 @@
 
 			<p class="product-details gray">Size:</p>
 
-			<select name="sizes" id="size-select" autocomplete="off" required>
-				<option value="">Select</option>
-				<option value="small">Small (S)</option>
-				<option value="medium">Medium (M)</option>
-				<option value="large">Large (L)</option>
-				<option value="xlarge">X-Large (XL)</option>
-				<option value="xxlarge">XX-Large (XXL)</option>
-			</select>
+			<div class="w-full flex-row flex justify-center md:justify-start">
+				<div class="border-2 w-fit rounded-lg border-black self-center">
+					<select name="sizes" id="size-select" autocomplete="off" required>
+						<option value="">Select</option>
+						<hr />
+						<optgroup label="Sizes">
+							<option value="small">Small (S)</option>
+							<option value="medium">Medium (M)</option>
+							<option value="large">Large (L)</option>
+							<option value="xlarge">X-Large (XL)</option>
+							<option value="xxlarge">XX-Large (XXL)</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
 
 			<div class="divider-mini"></div>
 			<p class="product-details big-text">Product Details</p>
 			<div>
 				<p class="product-details block-inline">{product.description}</p>
 			</div>
-
-			<AddToCartButton buttonTitle="Buy now"></AddToCartButton>
+			<div class="button-no-move">
+				<AddToCartButton buttonTitle="Buy now"></AddToCartButton>
+			</div>
 		</div>
 	</div>
 {:else}
@@ -177,8 +185,20 @@
 	.gray {
 		color: #606060;
 	}
+	.button-no-move {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	}
 
 	@media (min-width: 768px) {
+		.button-no-move {
+			display: flex;
+			flex-direction: row;
+			align-items: start;
+			justify-content: start;
+		}
 		.product-container {
 			flex-direction: row;
 			align-items: flex-start;

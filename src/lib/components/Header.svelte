@@ -3,10 +3,13 @@
 </script>
 
 <div class="header">
-    <a href="/" class="text-white font-Julius font-normal text-3xl ml-6 transition-all duration-300
-    hover:translate-y-[-0.125rem] hover:transition-all hover:duration-300">
-        GlamVault
-    </a>
+	<a
+		href="/"
+		class="text-white font-Julius font-normal text-3xl ml-6 transition-all duration-300
+    hover:translate-y-[-0.125rem] hover:transition-all hover:duration-300"
+	>
+		GlamVault
+	</a>
 
 	<NavigationBar />
 </div>
@@ -27,24 +30,5 @@
 		align-items: center;
 		padding: 10px;
 		z-index: 2;
-	}
-
-	.text {
-		font-family: 'Julius Sans One', sans-serif;
-		color: white;
-		font-weight: 400;
-		font-size: 32px;
-		margin-left: 20px;
-		font-style: normal;
-		padding: 10px;
-	}
-
-	@media (max-width: 768px) {
-		.text {
-			font-weight: 400;
-			font-size: 22px;
-			margin-left: 5px;
-			padding: 0px;
-		}
 	}
 </style>
