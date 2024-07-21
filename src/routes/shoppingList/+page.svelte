@@ -1,110 +1,109 @@
 <script lang="ts">
-    import AddToCartButton from "$lib/components/AddToCartButton.svelte";
+	import AddToCartButton from '$lib/components/AddToCartButton.svelte';
 
-    import {onMount} from 'svelte';
-    import axios from 'axios';
+	import { onMount } from 'svelte';
+	import axios from 'axios';
 
-    import {Link} from 'svelte-routing';
+	interface Product {
+		id: number;
+		name: string;
+		description: string;
+		price: number;
+		quantity: number;
+		img: string;
+	}
 
+	let products: Product[] = [];
 
-    interface Product {
-        id: number;
-        name: string;
-        description: string;
-        price: number;
-        quantity: number;
-        img: string;
-    }
+	let baseUrl = 'http://127.0.0.1:8000';
 
-    let products: Product[] = [];
-
-    let baseUrl = 'http://127.0.0.1:8000';
-
-    onMount(async () => {
-        try {
-            const response = await axios.get(`${baseUrl}/products/`);
-            products = response.data;
-        } catch (error) {
-            console.error('Error fetching products:', error);
-        }
-    });
+	onMount(async () => {
+		try {
+			const response = await axios.get(`${baseUrl}/products/`);
+			products = response.data;
+		} catch (error) {
+			console.error('Error fetching products:', error);
+		}
+	});
 </script>
 
+<svelte:head>
+	<title>Shopping list</title>
+	<meta name="items page" content="clothing items" />
+</svelte:head>
+
 <div class="cards">
-    {#each products as product}
-        <div class="cloth-card">
-            <div class="block-media overflow-hidden">
-                <a href="/product/{product.id}" class="justify-center align-middle">
-                    <img src={product.img} alt={product.name} class="w-fit h-fit"/>
-                </a>
-            </div>
+	{#each products as product}
+		<div class="cloth-card">
+			<div class="block-media">
+				<a href="/product/{product.id}"> <img src={product.img} alt={product.name} /></a>
+			</div>
 
-            <div class="text-block">
-                <span>{product.name}</span>
-                <span style="color: #737373">{product.price}$</span>
-            </div>
+			<div class="text-block">
+				<span>{product.name}</span>
+				<span style="color: #737373">{product.price}$</span>
+			</div>
 
-            <AddToCartButton/>
-        </div>
-    {/each}
+			<AddToCartButton buttonTitle="Add to cart" />
+		</div>
+	{/each}
 </div>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+128+Text&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+128+Text&display=swap');
 
-    @media (min-width: 600px) {
-        .cards {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
+	@media (min-width: 600px) {
+		.cards {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
 
-    @media (min-width: 900px) {
-        .cards {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
+	@media (min-width: 900px) {
+		.cards {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 
-    @media (min-width: 1200px) {
-        .cards {
-            grid-template-columns: repeat(4, 1fr);
-        }
-    }
+	@media (min-width: 1200px) {
+		.cards {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 
-    .cards {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: grid;
-        gap: 1rem;
-        align-items: center;
-        justify-items: center;
-    }
+	.cards {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: grid;
+		align-items: center;
+		justify-items: center;
+	}
 
-    .text-block {
-        font-family: Krub, sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        display: flex;
-        justify-content: space-between;
-    }
+	.text-block {
+		font-family: Krub, sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		display: flex;
+		justify-content: space-between;
+	}
 
-    span {
-        margin: 7px;
-    }
+	span {
+		margin: 7px;
+	}
 
-    .cloth-card {
-        border: none;
-        color: black;
-        padding: 1rem;
-        width: 221px;
-        height: 331px;
-    }
+	.cloth-card {
+		border: none;
+		color: black;
+		padding: 1rem;
+		width: 221px;
+		height: 390px;
+	}
 
-    .block-media {
-        border: 3px solid black;
-        box-shadow: 0.5rem 0.5rem 0.5rem rgb(215, 215, 215);
-        border-radius: 20px;
-        width: 221px;
-        height: 253px;
-    }
-
+	.block-media {
+		border: 3px solid black;
+		box-shadow: 0.5rem 0.5rem 0.5rem rgb(215, 215, 215);
+		border-radius: 20px;
+		width: 221px;
+		height: 253px;
+		padding: 5px;
+	}
 </style>

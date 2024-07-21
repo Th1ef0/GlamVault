@@ -61,6 +61,11 @@
     }
 </script>
 
+<svelte:head>
+	<title>Product addition</title>
+	<meta name="product addition page" content="product addition field" />
+</svelte:head>
+
 <div class="ml-60">
     <p class="title-main">Create a New Product</p>
     <div class="divider" />

@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e3af0ed-342f-47df-a9ad-774504f6687c" name="Changes" comment="add market functional">
-      <change afterPath="$PROJECT_DIR$/backend.Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend.Dockerfile" afterDir="false" />
+    <list default="true" id="9e3af0ed-342f-47df-a9ad-774504f6687c" name="Changes" comment="add lint and prettier. add mobile-friendliness pages. add titles and meta data">
+      <change beforePath="$PROJECT_DIR$/.husky/pre-commit" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/receiver.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/receiver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/sql_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/sql_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/admin/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/admin/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/product/[id]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/product/[id]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/registration/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/registration/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/shoppingList/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/shoppingList/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,11 +70,11 @@
       <recent name="C:\Users\nosov\WebstormProjects\GlamVault\src\routes\authorization" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kve10\WebstormProjects\GlamVault\static" />
+      <recent name="C:\Users\kve10\WebstormProjects\GlamVault\static\assets" />
       <recent name="C:\Users\kve10\WebstormProjects\GlamVault" />
       <recent name="C:\Users\kve10\WebstormProjects\GlamVault\api" />
       <recent name="C:\Users\nosov\WebstormProjects\GlamVault\src\routes" />
-      <recent name="C:\Users\nosov\WebstormProjects\GlamVault\static\assets\authorization" />
-      <recent name="C:\Users\nosov\WebstormProjects\GlamVault\static\assets" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -116,7 +99,7 @@
       <workItem from="1721118724103" duration="10636000" />
       <workItem from="1721391219439" duration="16240000" />
       <workItem from="1721418884606" duration="3783000" />
-      <workItem from="1721422836116" duration="3513000" />
+      <workItem from="1721422836116" duration="22610000" />
     </task>
     <task id="LOCAL-00001" summary="add market functional">
       <option name="closed" value="true" />
@@ -126,14 +109,51 @@
       <option name="project" value="LOCAL" />
       <updated>1721416951728</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add img for products">
+      <option name="closed" value="true" />
+      <created>1721427851875</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721427851876</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add lint and prettier. add mobile-friendliness pages. add titles and meta data">
+      <option name="closed" value="true" />
+      <created>1721581221023</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721581221023</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add lint and prettier. add mobile-friendliness pages. add titles and meta data">
+      <option name="closed" value="true" />
+      <created>1721581403067</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721581403067</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add market functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="add market functional" />
+    <MESSAGE value="add img for products" />
+    <MESSAGE value="add lint and prettier. add mobile-friendliness pages. add titles and meta data" />
+    <option name="LAST_COMMIT_MESSAGE" value="add lint and prettier. add mobile-friendliness pages. add titles and meta data" />
   </component>
 </project>

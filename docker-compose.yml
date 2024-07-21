@@ -8,12 +8,12 @@ services:
     stop_signal: SIGINT
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - '8000:8000'
     depends_on:
       - postgres
     environment:
       PG_USER: postgres
-      PG_PASSWD: "sup3r_s3cr3t_pa55w0rd"
+      PG_PASSWD: 'sup3r_s3cr3t_pa55w0rd'
       PG_HOST: postgres
       PG_PORT: 5432
       PG_DB: postgres
@@ -24,7 +24,7 @@ services:
     stop_signal: SIGINT
     restart: unless-stopped
     ports:
-      - "5174:3000"
+      - '5174:3000'
     depends_on:
       - backend
   postgres:
