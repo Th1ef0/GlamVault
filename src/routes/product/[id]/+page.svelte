@@ -34,7 +34,9 @@
 
 {#if product}
     <div class="product-whole">
-        <img class="primary-image" src={product.img} alt="Product 1"/>
+        <div class="overflow-hidden">
+            <img class="primary-image" src={product.img} alt="Product"/>
+        </div>
         <div class="product-info block-inline">
             <h2 class="product-title">{product.name}</h2>
             <div class="divider"/>
@@ -148,7 +150,7 @@
         max-width: 30%;
         border-radius: 3%;
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle;
         border-color: black;
         border: solid 0.125rem;
         box-shadow: 0.25rem 0.25rem 0.25rem gray;

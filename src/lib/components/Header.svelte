@@ -3,9 +3,10 @@
 </script>
 
 <div class="header">
- <div class="text">
-  GlamVault
- </div>
+    <a href="/" class="text-white font-Julius font-normal text-3xl ml-6 transition-all duration-300
+    hover:translate-y-[-0.125rem] hover:transition-all hover:duration-300">
+        GlamVault
+    </a>
 
  <NavigationBar />
 </div>

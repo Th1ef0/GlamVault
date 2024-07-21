@@ -33,9 +33,10 @@
 <div class="cards">
     {#each products as product}
         <div class="cloth-card">
-            <div class="block-media">
-                <a href="/product/{product.id}">asd</a>
-                <img src={product.img} alt={product.name} />
+            <div class="block-media overflow-hidden">
+                <a href="/product/{product.id}" class="justify-center align-middle">
+                    <img src={product.img} alt={product.name} class="w-fit h-fit"/>
+                </a>
             </div>
 
             <div class="text-block">
