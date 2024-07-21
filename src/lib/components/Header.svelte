@@ -1,40 +1,49 @@
 <script>
-    import NavigationBar from "$lib/components/NavigationBar.svelte";
+	import NavigationBar from '$lib/components/NavigationBar.svelte';
 </script>
 
 <div class="header">
- <div class="text">
-  GlamVault
- </div>
+	<a href="/">
+		<div class="text">GlamVault</div>
+	</a>
 
- <NavigationBar />
+	<NavigationBar />
 </div>
 
 <style>
- @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+128+Text&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+128+Text&display=swap');
 
-    .header {
-     width: 100%;
-     height: 60px;
-     position: fixed;
-     top: 0;
-     left: 0;
-     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 30px;
-     background: black;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 10px;
-     z-index: 2;
-    }
+	.header {
+		width: 100%;
+		height: 60px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		box-shadow: rgba(0, 0, 0, 0.35) 0 5px 30px;
+		background: black;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+		z-index: 2;
+	}
 
-    .text {
-     font-family: "Julius Sans One", sans-serif;
-     color: white;
-     font-weight: 400;
-     font-size: 32px;
-     margin-left: 20px;
-     font-style: normal;
-     padding: 10px;
-    }
+	.text {
+		font-family: 'Julius Sans One', sans-serif;
+		color: white;
+		font-weight: 400;
+		font-size: 32px;
+		margin-left: 20px;
+		font-style: normal;
+		padding: 10px;
+	}
+
+	@media (max-width: 768px) {
+		.text {
+			font-weight: 400;
+			font-size: 22px;
+			margin-left: 5px;
+			padding: 0px;
+		}
+	}
 </style>

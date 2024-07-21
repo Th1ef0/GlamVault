@@ -1,56 +1,46 @@
 <script>
-    import Registration from "$lib/components/Registration.svelte";
+	import Registration from '$lib/components/Registration.svelte';
 </script>
 
+<svelte:head>
+	<title>Registration</title>
+	<meta name="registration page" content="registration field" />
+</svelte:head>
+
 <section>
-    <div class="main">
-        <div class="registration-block">
-            <Registration />
-        </div>
-    </div>
+	<div class="main">
+		<div class="registration-block">
+			<Registration />
+		</div>
+	</div>
 </section>
 
 <style>
-    .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
+	.main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 75vh;
+		margin-top: 2rem;
+	}
 
-    .photo-block {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
+	.registration-block {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 20px;
+	}
 
-    img {
-        height: auto;
-        width: 100%;
-        max-width: 400px;
-    }
+	@media (min-width: 768px) {
+		.main {
+			flex-direction: row;
+		}
 
-    .registration-block {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 20px;
-    }
-
-    @media(min-width: 768px) {
-        .main {
-            flex-direction: row;
-        }
-
-        .photo-block {
-            max-width: 50%;
-        }
-
-        .registration-block {
-            max-width: 50%;
-        }
-    }
+		.registration-block {
+			max-width: 50%;
+		}
+	}
 </style>
