@@ -1,3 +1,27 @@
+<div class="button-container">
+	<button class="button">
+		<a href="tel:+79170472451">
+			<img src="/assets/footer/call.png" alt="Call" />
+		</a>
+	</button>
+
+	<button class="button">
+		<a href="https://github.com/Th1ef0/GlamVault/tree/main">
+			<img src="/assets/footer/github.png" alt="GitHub" />
+		</a>
+	</button>
+
+	<button class="button">
+		<a href="https://www.instagram.com/instagram">
+			<img src="/assets/footer/instagram.png" alt="Instagram" />
+		</a>
+	</button>
+
+	<button class="button">
+		<img src="/assets/footer/telegram.png" alt="Telegram" />
+	</button>
+</div>
+
 <style>
 	button {
 		background-color: white;
@@ -63,27 +87,3 @@
 		}
 	}
 </style>
-
-<div class="button-container">
-    <button class="button">
-        <a href="tel:+79170472451">
-            <img src="/assets/footer/call.png" alt="Call">
-        </a>
-    </button>
-
-    <button class="button">
-        <a href="https://github.com/Th1ef0/GlamVault/tree/main">
-            <img src="/assets/footer/github.png" alt="GitHub">
-        </a>
-    </button>
-
-    <button class="button">
-        <a href="https://www.instagram.com/instagram">
-            <img src="/assets/footer/instagram.png" alt="Instagram">
-        </a>
-    </button>
-
-    <button class="button">
-        <img src="/assets/footer/telegram.png" alt="Telegram">
-    </button>
-</div>

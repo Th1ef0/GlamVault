@@ -103,7 +103,7 @@
 		box-shadow: 0.5rem 0.5rem 0.5rem rgb(215, 215, 215);
 		border-radius: 20px;
 		width: 221px;
-		height: 253px;
+		height: 225px;
 		padding: 5px;
 	}
 </style>
