@@ -1,6 +1,6 @@
 <script lang="ts">
 	import axios from 'axios';
-	import { goto } from '$app/navigation';
+	import { navigate } from 'svelte-routing';
 	import MainButton from '$lib/components/MainButton.svelte';
 	import { createClient } from '@supabase/supabase-js';
 
@@ -24,10 +24,9 @@
 		formData.append('description', description);
 		formData.append('price', price.toString());
 
-		const { data, error } = await supabase.storage.from('images').upload(`gv_${name}.png`, img);
+		const { error } = await supabase.storage.from('images').upload(`gv_${name}.png`, img);
 		if (error) {
 			error_text = 'Error while uploading image.';
-			console.log(data);
 			console.log(error);
 			return;
 		} else {
@@ -52,7 +51,7 @@
 			)
 			.then(function (response) {
 				console.log(response);
-				goto('/catalog');
+				navigate('/');
 			})
 			.catch(function (error) {
 				error_text = 'Error while adding product';
@@ -83,7 +82,7 @@
 				<label
 					for="upload"
 					class="flex flex-col items-center gap-2 cursor-pointer
-                rounded-md border-4 border-black bg-gray-50 p-4 shadow-md h-[30rem] w-96 mt-8 justify-center
+                rounded-md border-4 border-black bg-gray-50 p-4 shadow-md h-[30rem] lg:w-96 sm:w-72 mt-8 justify-center
                 transition-all duration-300 hover:shadow-2xl hover:transition-all hover:duration-300"
 				>
 					<svg
@@ -99,7 +98,7 @@
 							d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
 						/>
 					</svg>
-					<span class="text-gray-600 text-2xl font-medium font-Krub">Photo added successfully</span>
+					<span class="text-gray-600 font-medium font-Krub">Photo added successfully</span>
 					<input
 						id="upload"
 						accept=".png, .jpg"
@@ -120,7 +119,7 @@
 			<label
 				for="upload"
 				class="flex flex-col items-center gap-2 cursor-pointer
-                rounded-md border-2 border-black bg-gray-50 p-4 shadow-md h-[30rem] w-96 mt-8 justify-center
+                rounded-md border-2 border-black bg-gray-50 p-4 shadow-md h-[27rem] lg:w-96 sm:w-72 mt-8 justify-center
                 transition-all duration-300 hover:shadow-2xl hover:transition-all hover:duration-300"
 			>
 				<svg
@@ -154,7 +153,7 @@
 		<div class="form-main">
 			<input
 				type="text"
-				class=" bg-gray-50 border-2 border-black rounded-lg font-Krub text-xl h-14 w-96 pl-4
+				class=" bg-gray-50 border-2 border-black rounded-lg font-Krub text-xl h-14 lg:w-96 sm:w-72 pl-4
             transition-all duration-300 hover:shadow-2xl hover:transition-all hover:duration-300"
 				bind:value={name}
 				placeholder="Enter product name"
@@ -171,7 +170,7 @@
 				<textarea
 					bind:value={description}
 					placeholder="Enter description for the product"
-					class="bg-gray-50 border-2 border-black rounded-lg mt-16 w-[30rem] h-72 pl-4 pt-4 placeholder:align-top
+					class="bg-gray-50 border-2 border-black rounded-lg mt-6 lg:w-[30rem] sm:w-[18rem] h-52 pl-4 pt-4 placeholder:align-top
                 font-Krub text-base transition-all duration-300 hover:shadow-2xl hover:transition-all hover:duration-300"
 				/>
 			</div>
@@ -216,5 +215,56 @@
 		margin-bottom: 0;
 		margin-top: 3rem;
 		margin-left: 1rem;
+	}
+
+	.ml-60 {
+		height: 75vh;
+	}
+
+	@media (max-width: 768px) {
+		.title-main {
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.form-container {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.form-main {
+			margin-left: 0;
+		}
+
+		.divider {
+			width: 100%;
+		}
+
+		@media (max-width: 768px) {
+			.title-main {
+				font-size: 2rem;
+				text-align: center;
+			}
+
+			.form-container {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.form-main {
+				margin-left: 0;
+				width: 100%;
+				align-items: center;
+			}
+
+			.divider {
+				width: 100%;
+				margin: 0;
+			}
+
+			.ml-60 {
+				margin-left: 0;
+			}
+		}
 	}
 </style>
