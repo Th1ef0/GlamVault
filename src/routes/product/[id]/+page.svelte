@@ -68,9 +68,14 @@
 			<div class="divider-mini"></div>
 			<p class="product-details big-text">Product Details</p>
 			<div>
-				<p class="product-details block-inline">{product.description}</p>
+				<p
+					class="block-inline bg-gray-50 border-2 border-black rounded-lg mt-6 lg:w-[30rem] sm:w-[18rem] h-52 pl-4 pt-4
+                font-Krub text-base"
+				>
+					{product.description}
+				</p>
 			</div>
-			<div class="button-no-move">
+			<div class="button-no-move mt-4">
 				<AddToCartButton buttonTitle="Buy now"></AddToCartButton>
 			</div>
 		</div>
