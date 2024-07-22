@@ -13,7 +13,7 @@
 		<img src="/assets/homePage/perm_identity.png" alt="Account" />
 	</button>
 
-	<button class="button" on:click={() => navigateToURL('/shoppingList')}>
+	<button class="button" on:click={() => navigateToURL('/catalog')}>
 		<img src="/assets/homePage/article.png" alt="About" />
 	</button>
 

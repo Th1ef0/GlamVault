@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Main page</title>
+	<title>Glam Vault | Main page</title>
 	<meta name="main page of market" content="nav and contacts" />
 </svelte:head>
 

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Authorization</title>
+	<title>GlamVault | Authorization</title>
 	<meta name="authorization page" content="authorization field" />
 </svelte:head>
 

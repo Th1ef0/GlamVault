@@ -28,15 +28,17 @@
 </script>
 
 <svelte:head>
-	<title>Shopping list</title>
-	<meta name="items page" content="clothing items" />
+	<title>GlamVault | Catalog</title>
+	<meta name="items catalog page" content="catalog clothing items" />
 </svelte:head>
 
 <div class="cards">
 	{#each products as product}
 		<div class="cloth-card">
-			<div class="block-media overflow-hidden">
-				<a href="/product/{product.id}"> <img src={product.img} alt={product.name} /></a>
+			<div class="block-media overflow-hidden flex justify-center items-center">
+				<a href="/product/{product.id}" class="min-w-full h-auto">
+					<img src={product.img} alt={product.name} /></a
+				>
 			</div>
 
 			<div class="text-block">
@@ -93,7 +95,7 @@
 	.cloth-card {
 		border: none;
 		color: black;
-		padding: 1rem;
+		margin: 1rem;
 		width: 221px;
 		height: 390px;
 	}
@@ -104,6 +106,5 @@
 		border-radius: 20px;
 		width: 221px;
 		height: 225px;
-		padding: 5px;
 	}
 </style>

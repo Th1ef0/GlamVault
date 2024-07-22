@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Registration</title>
+	<title>GlamVault | Registration</title>
 	<meta name="registration page" content="registration field" />
 </svelte:head>
 

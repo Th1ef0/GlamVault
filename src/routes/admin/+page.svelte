@@ -1,6 +1,6 @@
 <script lang="ts">
 	import axios from 'axios';
-	import { navigate } from 'svelte-routing';
+	import { goto } from '$app/navigation';
 	import MainButton from '$lib/components/MainButton.svelte';
 	import { createClient } from '@supabase/supabase-js';
 
@@ -52,7 +52,7 @@
 			)
 			.then(function (response) {
 				console.log(response);
-				navigate('/');
+				goto('/catalog');
 			})
 			.catch(function (error) {
 				error_text = 'Error while adding product';

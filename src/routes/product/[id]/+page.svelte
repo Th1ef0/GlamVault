@@ -51,7 +51,7 @@
 
 			<div class="w-full flex-row flex justify-center md:justify-start">
 				<div class="border-2 w-fit rounded-lg border-black self-center">
-					<select name="sizes" id="size-select" autocomplete="off" required>
+					<select class="bg-transparent" name="sizes" id="size-select" autocomplete="off" required>
 						<option value="">Select</option>
 						<hr />
 						<optgroup label="Sizes">
